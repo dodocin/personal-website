@@ -3,29 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>{{ site.title }}</h1>
     <p>{{ site.description }}</p>
   </header>
-  <main>
-    {{ content }}
-  </main>
+
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/cv">CV</a>
+    <a href="/projects">Projects</a>
+  </nav>
+
+  <div class="container">
+    <div class="section">
+      <h2>Welcome!</h2>
+      <p>Hi, I’m [Your Name], a specialist in AI and Cognitive Science. Here's a quick preview of what this site will have:</p>
+      <ul>
+        <li><strong>About Me:</strong> Learn about my journey.</li>
+        <li><strong>My CV:</strong> A timeline of my experience.</li>
+        <li><strong>AI Projects:</strong> Insights into my work in AI.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Latest Updates</h2>
+      <p>Check out the latest blog posts, projects, and achievements!</p>
+    </div>
+  </div>
+
   <footer>
-    <p>© {{ site.title }} {{ site.time | date: "%Y" }}</p>
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
-<section class="timeline">
-  {% for item in site.data.cv %}
-  <div class="timeline-item">
-    <h3>{{ item.title }}</h3>
-    <span>{{ item.date }}</span>
-    <p>{{ item.description }}</p>
-  </div>
-  {% endfor %}
-</section>
