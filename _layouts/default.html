@@ -19,3 +19,13 @@
   </footer>
 </body>
 </html>
+
+<section class="timeline">
+  {% for item in site.data.cv %}
+  <div class="timeline-item">
+    <h3>{{ item.title }}</h3>
+    <span>{{ item.date }}</span>
+    <p>{{ item.description }}</p>
+  </div>
+  {% endfor %}
+</section>
