@@ -1,15 +1,20 @@
 ---
 layout: default
-title: Home
+title: My Landing Page
 ---
 
-# Welcome to My World of AI and Cognitive Science 🌟
+<section class="hero">
+    <h1>Hi, I'm [Your Name]</h1>
+    <p>Welcome to my personal website! Here’s a bit about me.</p>
+    <a class="button" href="#contact">Contact Me</a>
+</section>
 
-I’m [Your Name], a specialist in AI and cognitive science. Here, I share my projects, research, and insights into the fascinating interplay between technology and human thought.
+<section id="about">
+    <h2>About Me</h2>
+    <p>I'm a cognitive science specialist passionate about AI, psychology, and creative projects.</p>
+</section>
 
-[About Me](about.md)
-
-## Highlights
-- **Project 1:** AI Application in Cognitive Science
-- **Project 2:** Neural Network Simulations
-- **Blog:** [Latest Posts](./blog)
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: youremail@example.com</p>
+</section>
