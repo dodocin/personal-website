@@ -1,15 +1,17 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Ensure Arial applies globally */
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333; /* Default text color is dark gray */
+    background-color: #f9f9f9; /* Light background for contrast */
 }
 
 /* Header Styles */
 .main-header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Green background for header */
+    color: white; /* White text color */
     padding: 20px 0;
     text-align: center;
 }
@@ -28,12 +30,12 @@ section {
 
 section h2 {
     font-size: 1.8em;
-    color: #333;
+    color: #333; /* Dark gray text for section headings */
 }
 
 /* Link Styles */
 a {
-    color: #4CAF50;
+    color: #4CAF50; /* Green text for links */
     text-decoration: none;
 }
 
@@ -43,8 +45,8 @@ a:hover {
 
 /* Footer Styles */
 .main-footer {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text for footer */
     text-align: center;
     padding: 10px 0;
     font-size: 0.9em;
