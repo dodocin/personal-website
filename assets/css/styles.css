@@ -33,6 +33,17 @@ section h2 {
     color: #333; /* Dark gray text for section headings */
 }
 
+/* Center-align the content for hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    text-align: center; /* Center text */
+    margin: 0;
+}
+
 /* Link Styles */
 a {
     color: #4CAF50; /* Green text for links */
